@@ -1,95 +1,253 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Fullscreen Scrolling Slideshow | Codrops</title>
-		<meta name="description" content="A fullscreen scroll-based slideshow with a content view powered by GreenSock's Observer plugin." />
-		<meta name="keywords" content="observer plugin, gsap, scrolling, slideshow" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" href="https://use.typekit.net/zns7sax.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
-	</head>
-	<body class="loading">
-		<main>
-			<div class="frame">
-				<div class="frame__title"> 
-					<a class="frame__title-prev" href="https://tympanus.net/Development/ImageToContent/">Previous demo</a>
-					<h1 class="frame__title-main">Fullscreen Scrolling Slideshow</h1> 
-					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=64521"><span>&rarr;</span></a> 
-				</div>
-				<nav class="frame__nav">
-					<button class="frame__nav-button unbutton">Stronger</button>
-					<button class="frame__nav-button unbutton">No choice</button>
-					<button class="frame__nav-button unbutton">Owned no longer</button>
-					<button class="frame__nav-button unbutton">Assert control</button>
-					<button class="frame__nav-button unbutton">Cold &amp; detached</button>
-				</nav>
-				<button class="frame__back unbutton">
-					<span data-splitting>&larr; Go back</span>
-				</button>
-				<span class="frame__info">&darr; Scroll or drag &darr;</span>
-			</div>
-			<div class="slides">
-				<div class="slide">
-					<div class="slide__inner">
-						<div class="slide__img"><div class="slide__img-inner" style="background-image:url(img/1.jpg)"></div></div>
-						<div class="slide__content">
-							<div class="slide__content-img" style="background-image:url(img/1.jpg)"></div>
-							<h2>Stronger</h2>
-							<p>You strung me along, I thought I was strong, but now you have pushed me under. I’ve opened my eyes, and counted the lies, now it is clearer to me. You are just a user, and an abuser, and I refuse to take it.</p>
-						</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__inner">
-						<div class="slide__content">
-							<div class="slide__content-img" style="background-image:url(img/2.jpg)"></div>
-							<h2>No choice</h2>
-							<p>Fall into line, you will do as you’re told. No choice fatigue, your blood is running cold. We lose control, the world will fall apart.</p>
-						</div>
-						<div class="slide__img"><div class="slide__img-inner" style="background-image:url(img/2.jpg)"></div></div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__inner">
-						<div class="slide__content">
-							<div class="slide__content-img" style="background-image:url(img/3.jpg)"></div>
-							<h2>Owned no longer</h2>
-							<p>We need a transmutation. One we all conceive. We need a revolution. So long as we stay free.</p>
-						</div>
-						<div class="slide__img"><div class="slide__img-inner" style="background-image:url(img/3.jpg)"></div></div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__inner">
-						<div class="slide__content">
-							<div class="slide__content-img" style="background-image:url(img/4.jpg)"></div>
-							<h2>Assert control</h2>
-							<p>Cornered, I’m exhausted with fear. Our love and compassion dissolved. And demons, have materialised in me. Can’t fight them, they’re taking control.</p>
-						</div>
-						<div class="slide__img"><div class="slide__img-inner" style="background-image:url(img/4.jpg)"></div></div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__inner">
-						<div class="slide__content">
-							<div class="slide__content-img" style="background-image:url(img/5.jpg)"></div>
-							<h2>Cold &amp; detached</h2>
-							<p>Fate has brought us here to face. Our hopes and dreams erased. Either kill or be killed.</p>
-						</div>
-						<div class="slide__img"><div class="slide__img-inner" style="background-image:url(img/5.jpg)"></div></div>
-					</div>
-				</div>
-			</div>
-			<div class="cursor">
-				<span class="cursor__text" data-splitting>+ Discover more</span>
-			</div>
-		</main>
-		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
-		<script type="module" src="js/index.js"></script>
-	</body>
+<html lang="fr" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EXPANSION</title>
+    <meta name="description"
+          content="Expansion est une web série documentaire. Avec ses 6 épisodes, elle a pour but de nous faire voyager dans les contrées les plus atypiques de notre ciel."/>
+    <meta name="keywords" content="Expansion, espace, planètes, webserie, youtube"/>
+    <meta name="author" content="Jean-Baptiste Desban"/>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/zns7sax.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        document.documentElement.className = "js";
+    var supportsCssVars = function () {
+        var e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+</head>
+<body class="loading">
+<main>
+    <header>
+        <div class="header-row">
+            <button class="menu-toggle" id="menuToggle">
+                <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="40px">
+                    <path d="M10,2 L2,2" class="bar-1"></path>
+                    <path d="M2,5 L10,5" class="bar-2"></path>
+                    <path d="M10,8 L2,8" class="bar-3"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section class="fullpage-menu">
+        <div class="fullpage-menu-inner">
+            <div class="menu-bg"></div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="./about.html"><span data-clip="About">A PROPOS</span></a></li>
+                    <li><a href="./crew.html"><span data-clip="Crew">EQUIPAGE</span></a></li>
+                    <li><a href="./gallery.html"><span data-clip="Gallery">GALERIE</span></a></li>
+                    <li><a href="./remerciement.html"><span data-clip="Thanks">REMERCIEMENTS</span></a></li>
+                    <li><small>Copyright ©2021 Jean-Baptiste Desban - <span onclick="location.href='./mentions-legales.html'">Mentions légales</span></small></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="frame">
+        <div onclick="location.href='https://www.cinespace.org/'" class="frame__title">
+            <h2 class="frame__title-main"><strong>Finaliste CineSpace 2022</strong></h2>
+        </div>
+        <nav class="frame__nav">
+            <button class="frame__nav-button unbutton">EXPANSION</button>
+            <button class="frame__nav-button unbutton">IMMENSITE</button>
+            <button class="frame__nav-button unbutton">TELLURIQUE EMBRASEE</button>
+            <button class="frame__nav-button unbutton">GAZEUSE ORAGEUSE</button>
+            <button class="frame__nav-button unbutton">LUNE GELEE</button>
+            <button class="frame__nav-button unbutton">REGARD VERS LE PASSE</button>
+            <button class="frame__nav-button unbutton">COEUR A L'AGONIE</button>
+        </nav>
+        <button class="frame__back unbutton">
+            <span data-splitting>&larr; Retour</span>
+        </button>
+        <span class="frame__info">&darr; Scroll ou drag &darr;</span>
+    </div>
+    <div class="slides">
+        <div class="slide">
+            <div class="slide__inner">
+                <div class="slide__img">
+                    <div class="slide__img-inner" style="background-image:url(img/background-expansion-home.webp)">
+                        <div class="title__content-slide"><h1 class="title__first-slide">EXPANSION</h1></div>
+                    </div>
+                </div>
+                <div class="slide__content">
+                    <div class="slide__content-img"
+                         style="background-image:url(img/background-expansion-home.webp)"></div>
+                    <h2>EXPANSION</h2>
+                    <p><strong>Un voyage à travers l'Espace</strong>
+                        <br/>
+                        <br/>
+                        Des volcans de Vénus aux océans souterrains d'une lune gelée de Jupiter, cette série de
+                        6 épisodes vous embarque dans un voyage atypique à travers l'espace et fait escale aux
+                        côtés de certaines des plus belles merveilles du système solaire et au-delà...
+                        <br>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=E4Vj-5zpkdQ&list=PLsXI2ZNg8LHMkJl4ms5Df7smNdNnhhil8&ab_channel=Jean-BaptisteDesban"
+                           target="_blank">- Découvrir la série</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide__inner">
+                <div class="slide__img">
+                    <div class="slide__img-inner"
+                         style="background-image:url(img/expansion-immensite-background.webp)"></div>
+                </div>
+                <div class="slide__content">
+                    <div class="slide__content-img"
+                         style="background-image:url(img/expansion-immensite-background.webp)"></div>
+                    <h2>IMMENSITE</h2>
+                    <p>Narré par Jean-Baptiste Desban, <br/>
+                        Cet épisode marque le début du voyage. Il commence dans l'espace interstellaire pour ensuite
+                        remonter le chemin jusqu’à un lieu qui nous est familier.
+                        <br/>
+                        <br/>
+                        <strong>Anecdote : </strong>Les lunes, planètes, étoiles, trou noir, amas ou encore nébuleuses
+                        constitueraient 10% de la masse de l'univers, les 90% restant serait du vide.
+                        <br>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=E4Vj-5zpkdQ&list=PLsXI2ZNg8LHMkJl4ms5Df7smNdNnhhil8&ab_channel=Jean-BaptisteDesban"
+                           target="_blank">- Découvrir l'épisode</a></p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=E4Vj-5zpkdQ" target="_blank">Regarder l'épisode</a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide__inner">
+                <div class="slide__content">
+                    <div class="slide__content-img"
+                         style="background-image:url(img/expansion-telurique-embrasee.webp)"></div>
+                    <h2>TELLURIQUE EMBRASEE</h2>
+                    <p>
+                        Narré par Marie Griffon,<br/>
+                        Sur Terre, les températures peuvent dépasser les 50 degrés. C'est le cas du désert d'El-Azizia
+                        en Libye. Mais imaginez une planète où les températures y sont 8 fois plus chaudes, où les
+                        pluies s'évaporent, où les volcans règnent…<br/><br/>
+                        <strong>Anecdote :</strong> "La majorité des cratères Vénusiens sont nommés d'après des noms de
+                        femmes historiques"
+                        <br>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=ux9uopEUXM0&list=PLsXI2ZNg8LHMkJl4ms5Df7smNdNnhhil8&index=2&ab_channel=Jean-BaptisteDesban"
+                           target="_blank">- Découvrir l'épisode</a></p>
+
+                </div>
+                <div class="slide__img">
+                    <div class="slide__img-inner"
+                         style="background-image:url(img/expansion-telurique-embrasee.webp)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide__inner">
+                <div class="slide__content">
+                    <div class="slide__content-img"
+                         style="background-image:url(img/expansion-gazeuse-orageuse.webp)"></div>
+                    <h2>GAZEUSE ORAGEUSE</h2>
+                    <p>Narré par Gabriel Mabilat,
+                        <br>
+                        À certains endroits, la Terre peut accueillir des vents atteignant les 300 kilomètres par heure.
+                        Mais ce n'est rien comparé à la sixième planète du système solaire qui en accueille des bien
+                        plus puissants.
+                        <br>
+                        <strong>Anecdote : </strong>La distance des anneaux de Saturne est plus grande que la distance
+                        Terre/Lune.
+                        <br>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=Zuk4nsTt3ak&list=PLsXI2ZNg8LHMkJl4ms5Df7smNdNnhhil8&index=3&ab_channel=Jean-BaptisteDesban"
+                           target="_blank">- Découvrir l'épisode</a></p>
+
+                </div>
+                <div class="slide__img">
+                    <div class="slide__img-inner"
+                         style="background-image:url(img/expansion-gazeuse-orageuse.webp)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide__inner">
+                <div class="slide__content">
+                    <div class="slide__content-img" style="background-image:url(img/expansion-lune-gelee.webp)"></div>
+                    <h2>LUNE GELEE</h2>
+                    <p>Narré par Chloé Vittenet,
+                        <br>
+                        Dans notre système solaire, les géantes de gaz sont les planètes qui comptent le plus de lunes.
+                        Parmi celles de Jupiter, l'une d'entre elles est recouverte d'une épaisse couche de glace qui
+                        cacherait... de l'eau liquide ?
+                        <br>
+                        <br>
+                        <strong>Anecdote : </strong>Europe a une taille similaire à notre lune.
+                        <br><br>
+                        <a href="https://www.youtube.com/watch?v=UBcxEuyUPw4&list=PLsXI2ZNg8LHMkJl4ms5Df7smNdNnhhil8&index=4&ab_channel=Jean-BaptisteDesban"
+                           target="_blank">- Découvrir l'épisode</a></p>
+
+                </div>
+                <div class="slide__img">
+                    <div class="slide__img-inner" style="background-image:url(img/expansion-lune-gelee.webp)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide__inner">
+                <div class="slide__content">
+                    <div class="slide__content-img"
+                         style="background-image:url(img/expansion-regard-vers-le-passe.webp)"></div>
+                    <h2>REGARD VERS LE PASSE</h2>
+                    <p>
+                        Narré par Jean-Yves Chilot,
+                        <br>
+                        Pour cet avant dernier épisode, nous quittons le système solaire dans un voyage à travers les
+                        âges de l’univers. Cette épopée vous emmène au plus près des objets célestes atypiques qui
+                        jonchent notre ciel jusqu’aux limites de l’univers observable.
+                        <br>
+                        <br>
+                        <strong>Anecdote :</strong> Quand nous regardons la Lune, nous la voyons telle qu’elle était une
+                        seconde avant.
+
+                        <br><br>
+                        <a href="https://www.youtube.com/watch?v=96bOjKwNc2o&list=PLsXI2ZNg8LHMkJl4ms5Df7smNdNnhhil8&index=5&ab_channel=Jean-BaptisteDesban"
+                           target="_blank">- Découvrir l'épisode</a>
+                    </p>
+                </div>
+                <div class="slide__img">
+                    <div class="slide__img-inner"
+                         style="background-image:url(img/expansion-regard-vers-le-passe.webp)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide__inner">
+                <div class="slide__content">
+                    <div class="slide__content-img"
+                         style="background-image:url(img/expansion-coeur-a-agonie.webp)"></div>
+                    <h2>COEUR A L'AGONIE</h2>
+                    <p>
+                        Narré par Jean-Baptiste Desban,
+                        <br>
+                        Pour le final de la série, nous revenons dans le système solaire. Mais un système solaire
+                        différent de celui que nous connaissons. Un système solaire où les anneaux de Saturne auront
+                        disparu, où la Terre sera calciné, où le soleil sera à l’agonie…
+                        <br>
+                        <br>
+                        <strong>Anecdote :</strong> Aujourd’hui, le soleil en est à la moitié de sa vie.
+                        <br><br>
+                        <a href="https://www.youtube.com/watch?v=roDZyQUYhl8&list=PLsXI2ZNg8LHMkJl4ms5Df7smNdNnhhil8&index=6&ab_channel=Jean-BaptisteDesban"
+                           target="_blank">- Découvrir l'épisode</a>
+                    </p>
+                </div>
+                <div class="slide__img">
+                    <div class="slide__img-inner" style="background-image:url(img/expansion-coeur-a-agonie.webp)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cursor">
+        <span class="cursor__text" data-splitting>+ Découvrir plus</span>
+    </div>
+</main>
+<script type="module" src="js/index.js"></script>
+</body>
 </html>

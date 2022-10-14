@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EXPANSION - ÉQUIPAGE</title>
+    <meta name="description"
+          content="Expansion est une web série documentaire. Avec ses 6 épisodes, elle a pour but de nous faire voyager dans les contrées les plus atypiques de notre ciel."/>
+    <meta name="keywords" content="Expansion, espace, planètes, webserie, youtube"/>
+    <meta name="author" content="Jean-Baptiste Desban"/>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/zns7sax.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+            integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+</head>
+<body>
+<main>
+    <header>
+        <div class="header-row">
+            <button class="menu-toggle" id="menuToggle">
+                <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="40px">
+                    <path d="M10,2 L2,2" class="bar-1"></path>
+                    <path d="M2,5 L10,5" class="bar-2"></path>
+                    <path d="M10,8 L2,8" class="bar-3"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section class="fullpage-menu">
+        <div class="fullpage-menu-inner">
+            <div class="menu-bg"></div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="/"><span data-clip="Home">ACCUEIL</span></a></li>
+                    <li><a href="./about.html"><span data-clip="About">A PROPOS</span></a></li>
+                    <li><a href="./gallery.html"><span data-clip="Gallery">GALERIE</span></a></li>
+                    <li><a href="./remerciement.html"><span data-clip="Thanks">REMERCIEMENTS</span></a></li>
+                    <li><small>Copyright ©2021 Jean-Baptiste Desban - <span onclick="location.href='./mentions-legales.html'">Mentions légales</span></small></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <div class="crew">
+
+        <h1>Equipage</h1>
+        <div class="crew__content">
+                <ul>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-marie-equipage.jpg" alt="expansion-marie-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.facebook.com/griffonactrice" class="icon" title="User Profile">
+                                <img src="./img/icons/facebook.png" alt="facebook-logo">
+                            </a>
+                        </div>
+                        <p>Marie Griffon</p><p>Voix off</p>
+                    </div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-gabriel-equipage.jpg" alt="expansion-gabriel-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/mab_officiel/?hl=fr" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Gabriel Mabilat</p><p>Voix off</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-chloe-equipage.jpg" alt="expansion-chloe-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/zadigtuevoltaire/?igshid=suezpk38brsm&fbclid=IwAR1wp_bIroPC7hNvpyirvkMlNvaUer4lPo9LuppcSEDgnI11kPUY-vUQHPw" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Chloé Vittenet</p><p>Voix off</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-jean-yves-equipage.jpg" alt="expansion-jean-yves-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.imdb.com/name/nm0157637/?ref_=fn_al_nm_1" class="icon" title="User Profile">
+                                <img src="./img/icons/imdb-logo-white-equipage.png" alt="imdb-logo">
+                            </a>
+                        </div><p>Jean-Yves Chilot</p><p>Voix off</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-jean-baptiste-equipage.jpg" alt="expansion-jean-baptiste-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/jbdesb/" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Jean-Baptiste Desban</p><p>Réalisateur<br> et voix off</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-xavier-n-equipage.jpg" alt="expansion-xavier-n-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/love_succo/" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Xavier Nivière</p><p>Assistant réalisateur et directeur<br> de casting</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-swik-equipage.jpg" alt="expansion-swik-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://soundcloud.com/swikmusic" class="icon" title="User Profile">
+                                <img src="./img/icons/soundcloud.png" alt="soundcloud-logo">
+                            </a>
+                        </div><p>Swik</p><p>Compositeur</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-sylvain-equipage.jpg" alt="expansion-sylvain-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/syl20_barre/?hl=fr" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Sylvain Barré</p><p>Ingénieur son</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-titouan-equipage.jpg" alt="expansion-titouan-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/tbycms/?hl=fr" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Titouan Cauchi-Caron</p><p>Ingénieur son</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-julien-equipage.jpg" alt="expansion-julien-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.facebook.com/julien.roussel.9210" class="icon" title="User Profile">
+                                <img src="./img/icons/facebook.png" alt="facebook-logo">
+                            </a>
+                        </div><p>Julien Roussel</p><p>Mixage</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-timothey-equipage.jpg" alt="expansion-timothey-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://borrowedtimeproduction.com/?fbclid=IwAR1EHjX4phMv03hhBX3eFx9pZfz9rPS2Lr49sdLChMmrZyoMSps-3O739xI" class="icon" title="User Profile">
+                                <img src="./img/icons/timothey-horiot-logo.png" alt="timothey-horiot-logo">
+                            </a>
+                        </div><p>Timothey Horiot</p><p>Effets spéciaux</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-xavier-c-equipage.jpg" alt="expansion-xavier-c-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/javi_carro/" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Xavier Carrobourg</p><p>Graphiste 2D / Illustrateur</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-pierre-theo-equipage.jpg" alt="pierre-theo-equipage">
+                        <p>Pierre Briois & Théo Galampoix</p><p>Script et régie</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-kylian-equipage.jpg" alt="expansion-kylian-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/kyllianlari/" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Kyllian Larigauderie</p><p>Script doctor</p></div></li>
+                    <li><div class="image-grid"><img src="./img/equipage/expansion-nicolas-equipage.jpg" alt="expansion-nicolas-equipage">
+                        <div class="overlay">
+                            <a target="_blank" href="https://www.instagram.com/nicolas_dozol/" class="icon" title="User Profile">
+                                <img src="./img/icons/instagram-logo.png" alt="instagram-logo">
+                            </a>
+                        </div><p>Nicolas Dozol</p><p>Communication</p></div></li>
+                </ul>
+
+
+        </div>
+
+    </div>
+
+</main>
+<script type="module" src="js/menu.js"></script>
+</body>
+</html>
