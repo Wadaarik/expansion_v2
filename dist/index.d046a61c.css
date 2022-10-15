@@ -227,7 +227,7 @@ nav li + li {
   margin-top: 30px;
 }
 
-nav li a {
+nav li .links {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #fff;

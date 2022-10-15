@@ -339,7 +339,7 @@ navTl.to('.menu-bg', {
     ease: Expo.easeInOut
 }, "<");
 
-navTl.from(['.main-menu li a', '.main-menu li small'], {
+navTl.from(['.main-menu li .links', '.main-menu li small'], {
     duration:1.5,
     y:"100%",
     rotateY:30,
